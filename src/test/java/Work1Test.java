@@ -9,8 +9,8 @@ class Work1Test {
         Work1 find = new Work1();
         int[] first={2,4,6,3,-1,1};
         int[] second={4,6,3};
-        boolean result = find.sequence(first,second);
-        Assertions.assertTrue(result);
+        boolean res = find.sequence(first,second);
+        Assertions.assertTrue(res);
 
 
     }

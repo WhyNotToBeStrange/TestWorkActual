@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Work3Test {
     @ParameterizedTest
-    @MethodSource("argumentsStream")
+    @MethodSource("numbers")
     void test(int[] arr, boolean expected) {
         Work3 tester = new Work3(arr);
         boolean res = tester.find(arr);
         Assertions.assertEquals(expected, res);
     }
 
-    private static Stream<Arguments> argumentsStream() {
+    private static Stream<Arguments> nummbers() {
         return Stream.of(
                 Arguments.of(new int[]{12, 13, 14, 15, 16}, true),
                 Arguments.of(new int[]{11, 13, 14, 15, 16}, true)
