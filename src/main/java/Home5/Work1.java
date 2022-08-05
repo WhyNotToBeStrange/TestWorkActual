@@ -1,3 +1,5 @@
+package Home5;
+
 public class Work1 {
     public boolean sequence(int[] first, int[] second) {
         boolean flag = false;

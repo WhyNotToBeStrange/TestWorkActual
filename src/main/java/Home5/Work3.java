@@ -1,3 +1,5 @@
+package Home5;
+
 public class Work3 {
     public Work3(int[] arr) {
 

@@ -1,7 +1,8 @@
+package Home5Test;
+
+import Home5.Work1;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Work1Test {
     @Test

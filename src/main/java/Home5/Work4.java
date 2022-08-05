@@ -1,3 +1,5 @@
+package Home5;
+
 public class Work4 {
     public String Matrix(int num ,int step ) {
         String res = "";
