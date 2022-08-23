@@ -1,4 +1,4 @@
-package Home8.Body;
+package Home8And11.Body;
 
 public abstract class Transport {
     public String name;
@@ -15,6 +15,17 @@ public abstract class Transport {
         this.hPower =hPower;
         this.consumption = consumption;
     }
+
+    public Transport(String[] array) {
+        this(array[0],Double.parseDouble(array[1]),Integer.parseInt(array[2]),Integer.parseInt(array[3]),
+                Integer.parseInt(array[4]));
+
+    }
+    public  String toOut(){
+        return "Transport:"+","+name+ ","+price+","+maxSpeed+","+hPower+","+consumption;
+
+    }
+
     public  String toString(){
         return "Transport:"+" Name:"+name+ " his price- "+price+" his max speed- "+maxSpeed+" his horse power"+hPower+" his fuel consumption- "+consumption;
 

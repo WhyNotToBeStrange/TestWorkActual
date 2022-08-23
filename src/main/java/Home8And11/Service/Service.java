@@ -1,6 +1,6 @@
-package Home8.Service;
+package Home8And11.Service;
 
-import Home8.Body.Transport;
+import Home8And11.Body.Transport;
 
 public class Service implements Taxopark {
     private Transport[] transports;
@@ -80,5 +80,13 @@ public class Service implements Taxopark {
             System.out.println(object);
         }
         System.out.println();
+    }
+
+    public Transport[] getTransports() {
+        return transports;
+    }
+
+    public void setTransports(Transport[] transports) {
+        this.transports = transports;
     }
 }

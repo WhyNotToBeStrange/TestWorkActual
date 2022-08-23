@@ -1,0 +1,8 @@
+Car,Nissan Sky Line GTr,1134500,320,620,3.5,Blue,
+Car,Toyota Supra,700000,450,680,4.0,Red,
+Car,Lexus Rx7,1200000,380,550,5.0,Black,
+Bus,Bogdan,300000,100,180,7.5,50,
+Bus,Sprinter,250000,110,170,6.5,30,
+Bus,Mercedes Vivo,350000,180,300,4.5,12),
+Truck,Toyota Tundra,1000000,200,420,5.5,500),
+Truck,Dodge Rover,120000,270,480,6,400)

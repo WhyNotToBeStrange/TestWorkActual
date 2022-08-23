@@ -1,9 +1,9 @@
-package Home8.Service;
+package Home8And11.Service;
 
-import Home8.Body.Bus;
-import Home8.Body.Car;
-import Home8.Body.Transport;
-import Home8.Body.Truck;
+import Home8And11.Body.Bus;
+import Home8And11.Body.Car;
+import Home8And11.Body.Transport;
+import Home8And11.Body.Truck;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,8 +11,6 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ServiceTest {
     @ParameterizedTest

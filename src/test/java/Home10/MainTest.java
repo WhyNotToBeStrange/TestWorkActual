@@ -1,19 +1,27 @@
-package Home5Test;
+package Home10;
 
-import Home5.Work1;
-import org.junit.jupiter.api.Assertions;
+import Home10.DattaStorage.Storage;
+import Home10.Run.Runner;
 import org.junit.jupiter.api.Test;
 
-class Work1Test {
+import static org.junit.jupiter.api.Assertions.*;
+
+class MainTest {
+
     @Test
-    void test(){
-        Work1 find = new Work1();
-        int[] first={2,4,6,3,-1,1};
-        int[] second={4,6,3};
-        boolean res = find.sequence(first,second);
-        Assertions.assertTrue(res);
-
-
+    void corectWorkingTest() throws Exception {
+        int first = 2;
+        int last = 20;
+        int threads = 3;
+        Storage storage = new Storage();
+        Runner runner = new Runner(first, last, threads, storage);
+        runner.startForThreads();
+        runner.joinThreads();
+        int[][] expect = {{ 3, 5, 7}, {11, 13}, {17, 19}};
+        int[] res = storage.getSimply();
+        for (int[] subExpect:expect) {
+            assertTrue(subsequenceCheck(res,subExpect));
+        }
     }
     public boolean subsequenceCheck(int[] sequence, int[] subsequence) {
         boolean isSubsequence = false;
@@ -38,5 +46,4 @@ class Work1Test {
         }
         return isSubsequence;
     }
-
 }
