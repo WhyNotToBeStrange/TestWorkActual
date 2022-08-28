@@ -1,4 +1,6 @@
-package Home12;
+package Home12.RunMain;
+
+import Home12.List.LinkedList;
 
 public class Main {
     public static void main(String[] args) {

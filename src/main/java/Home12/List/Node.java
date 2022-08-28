@@ -1,4 +1,4 @@
-package Home12;
+package Home12.List;
 
 public class Node<A> {
     private A value;

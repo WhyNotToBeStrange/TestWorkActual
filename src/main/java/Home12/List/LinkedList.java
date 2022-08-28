@@ -1,6 +1,4 @@
-package Home12;
-
-import Home12.Node;
+package Home12.List;
 
 public class LinkedList<A> {
     private Node<A> head;
@@ -53,7 +51,7 @@ public class LinkedList<A> {
         deleteIndexFinder(second);
     }
 
-    boolean isElse() {
+    public boolean isElse() {
         return head == null;
     }
     private boolean isNotElse(){
