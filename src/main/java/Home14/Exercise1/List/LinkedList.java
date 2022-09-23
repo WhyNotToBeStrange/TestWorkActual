@@ -1,4 +1,4 @@
-package Home12.List;
+package Home14.Exercise1.List;
 
 public class LinkedList<A> {
     private Node<A> head;
